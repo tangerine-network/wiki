@@ -1,0 +1,12 @@
+image: node:8-alpine
+
+pages:
+  tags:
+    - generic
+  script:
+    - cp -r docs public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
