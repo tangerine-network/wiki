@@ -1,0 +1,34 @@
+{
+  "name": "tangerine-wiki",
+  "version": "1.0.0",
+  "description": "Tangerine Network Wiki",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "docsify-cli": "^4.3.0",
+    "now": "^15.8.0"
+  },
+  "scripts": {
+    "start": "docsify start docs",
+    "deploy": "now -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/byzantine-lab/wiki.git"
+  },
+  "keywords": [
+    "Tangerine",
+    "Network",
+    "Blockchain",
+    "DLT"
+  ],
+  "author": "Wei-Ning Huang <w@byzantine-lab.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/byzantine-lab/wiki/issues"
+  },
+  "homepage": "https://gitlab.com/byzantine-lab/wiki#README"
+}
