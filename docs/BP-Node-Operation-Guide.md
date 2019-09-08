@@ -18,17 +18,20 @@
   - [Mining Mechanism](#mining-mechanism)
     - [Tangerine Mining Economy and Mining Rewards](#tangerine-mining-economy-and-mining-rewards)
 
-
 ## Objective
+
 The document will contain essential instructions and knowledge for a node operator to successfully run a Tangerine BP node.
 
 ## Background
+
 For node operator to easily establish a Tangerine BP node and continuously run the node for mining rewards, Tangerine foundation provides the well-designed software supporting the mining mechanism on Tangerine blockchain.
 
 ## Overview
+
 The guide has 3 sections, providing the required knowledge for a node operator to: Set up node, run software, and collect mining rewards.
 
 ## Environment Setup
+
 How to set up AWS/GCP server?
 
 For AWS, please follow https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/welcome.html
@@ -36,20 +39,22 @@ For AWS, please follow https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/w
 For GCP, please follow https://cloud.google.com/compute/docs/quickstart-linux
 
 ### System Requirement
+
 Running Tangerine BP node has the following requirement:
 
 ### Hardware Requirement
 
-| Tier | CPU | Memory | Bandwidth | Estimated Cost |
-| ---  | --- | ---    | ---       | ---            |
-| Minimum  | 4 Cores 2.0+ GHz | 8 GB | 200Mbps | 200~400 USD/mth |
-| Recommend| 8 Cores 2.0+ GHz | 16 GB| 200Mbps | 600~800 USD/mth |
+| Tier      | CPU              | Memory | Bandwidth | Disk       |
+| --------- | ---------------- | ------ | --------- | ---------- |
+| Minimum   | 4 Cores 2.0+ GHz | 8 GB   | 50 Mbps   | 256 GB SSD |
+| Recommend | 8 Cores 2.0+ GHz | 16 GB  | 200 Mbps  | 256 GB SSD |
 
 ### Software requirement
- - OS: Linux 64 bit.
- - Docker image: byzantinelab/go-tangerine
- - Docker
- - Public IP or behind UPnP-enabled router
+
+- OS: Linux 64 bit.
+- Docker image: byzantinelab/go-tangerine
+- Docker
+- Public IP or behind UPnP-enabled router
 
 ## Software Instruction
 
@@ -63,8 +68,8 @@ Start it and it will synchronize the local time automatically.
 
 Please make sure `TCP/30303` and `UDP/30303` is exposed, or else your node is likely to be disconnected from the reset of the network.
 
-
 ### Generate Node Key
+
 A node key is required to operate a BP node. Run the following command to generate a node key:
 
     docker run -v $PWD:/mnt -it byzantinelab/tangerine-tools \
@@ -79,6 +84,7 @@ Please store the address and public key which will be used to register a fullnod
 A file node.key can be found under the current working directory. node.key is very important as it contains the node private key. Please save this file securely.
 
 ### Register & Run your Node
+
 1. Start the BP node. Use the following command to launch the BP node:
 
 ```
@@ -112,11 +118,11 @@ For more detail instruction about `gtan`, go to https://github.com/byzantine-lab
 
 7. Fill in the information like below; currently, you need 1M TAN to run a BP node. If you don't have enough testnet TAN, ask @wnhuang (telegram) for it.
 
-  - Node Public Key (the public key generated above and should not duplicate)
-  - Name of the node (maximum length: 32 bytes)
-  - Contact email (maximum length: 32 bytes)
-  - Node Location (maximum length: 32 bytes)
-  - Website URL (maximum length: 128 bytes)
+- Node Public Key (the public key generated above and should not duplicate)
+- Name of the node (maximum length: 32 bytes)
+- Contact email (maximum length: 32 bytes)
+- Node Location (maximum length: 32 bytes)
+- Website URL (maximum length: 128 bytes)
 
 ![Register in Governance Contract Page](https://i.imgur.com/hlaXgyS.png)
 The user whose stake is locked (bought TAN coin in private-sale), please contact Tangerine Foundation and provide the information below.
@@ -126,7 +132,6 @@ The user whose stake is locked (bought TAN coin in private-sale), please contact
 After this, you are successfully staked and the configuration will start to take effect after 2 epochs (2400 blocks).
 
 Note that, the account of node.key and the account to send TAN coin to governance contract are not necessary to be the same. We strongly suggest using different keys to manage the risk.
-
 
 ### Troubleshooting
 
@@ -143,6 +148,7 @@ A BP node need to be online at all time, but since network between each BP nodes
 ## Mining Mechanism
 
 ### Tangerine Mining Economy and Mining Rewards
+
 Please read [this document](Cryptoeconomics.md)
 
-As an example, initially, each node can expectedly mine 1M * 18.75% = 187.5K TAN coin per year (before total minted tokens hit 1.5B TAN).
+As an example, initially, each node can expectedly mine 1M \* 18.75% = 187.5K TAN coin per year (before total minted tokens hit 1.5B TAN).
