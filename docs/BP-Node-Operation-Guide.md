@@ -112,7 +112,7 @@ For more detail instruction about `gtan`, go to https://github.com/byzantine-lab
 
 2. Install [Chrome or Firefox wallet extension](Create-Wallet.md).
 3. Send some TAN to your node key address, 500 TAN should suffice. These TAN are required for the node to send transaction and interact with the consensus protocol. You need to replenish them if it ran out.
-4. Send 5 ETH (Ethereum mainnet Ether, use Rinkeby Ether for testnet) to your node key address. This is a very **important** step. Since Tangerine relies on Ethereum mainnet to recover itself in case there is a catastrophic network failure. There are penalties if a BP node failed to propose recovery vote due to insufficient Ether in their node key address, see [Rules for node set](Rule-for-the-node-set.md) for more details.
+4. Send 1 ETH (Ethereum mainnet Ether, use 0.5 Rinkeby Ether for testnet) to your node key address. This is a very **important** step. Since Tangerine relies on Ethereum mainnet to recover itself in case there is a catastrophic network failure. There are penalties if a BP node failed to propose recovery vote due to insufficient Ether in their node key address, see [Rules for node set](Rule-for-the-node-set.md) for more details.
 5. Goto the [Governance contract page on Tangerine Garden](https://testnet.tangerine.garden/address/0x246FcDE58581e2754f215A523C0718C4BFc8041F).
 6. Navigate to the `Write` tab and select `register` from the dropdown menu.
 
@@ -124,7 +124,7 @@ For more detail instruction about `gtan`, go to https://github.com/byzantine-lab
 - Node Location (maximum length: 32 bytes)
 - Website URL (maximum length: 128 bytes)
 
-![Register in Governance Contract Page](https://i.imgur.com/hlaXgyS.png)
+![Register in Governance Contract Page](https://i.imgur.com/fWg7RcI.png)
 The user whose stake is locked (bought TAN coin in private-sale), please contact Tangerine Foundation and provide the information below.
 
 7. Hit send to register your node.
