@@ -4,7 +4,7 @@ The Tangerine governance contract is implemented in Go, but it's ABI compatible 
 
 The governance contract address is located at `0x246FcDE58581e2754f215A523C0718C4BFc8041F`
 
-The equivalent solidity interface can be found in the [byzantine-lab/governance-abi](https://github.com/byzantine-lab/governance-abi/blob/master/contracts/Governance.sol) repo. The governance contract ABI is as follows:
+The equivalent solidity interface can be found in the [tangerine-network/governance-abi](https://github.com/tangerine-network/governance-abi/blob/master/contracts/Governance.sol) repo. The governance contract ABI is as follows:
 
 <!-- DO NOT EDIT BELOW THIS LINE!! The below part is automatically generated from the governance-abi ci flow and any modification below will be lost. -->
 <!-- [[ABI AUTOGEN START]] -->

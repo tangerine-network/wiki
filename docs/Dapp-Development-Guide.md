@@ -13,7 +13,7 @@ Currently, Tangerine uses the same account system as Ethereum. Tangerine also ha
 
 Some special functions are provided through precompiled contract, e.g on chain randomness.
 
-To use the on chain randomess feature, please see the read me of [Tangerine Network RNG Library](https://github.com/byzantine-lab/tangerine-random-lib)
+To use the on chain randomess feature, please see the read me of [Tangerine Network RNG Library](https://github.com/tangerine-network/random-lib)
 
 ## Solidity
 

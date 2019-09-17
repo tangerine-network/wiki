@@ -106,7 +106,7 @@ The parameter `testnet` is only for the testnet of Tangerine Network.
 
 Please make sure you have enough disk space in the current working directory
 
-For more detail instruction about `gtan`, go to https://github.com/byzantine-lab/go-tangerine or use
+For more detail instruction about `gtan`, go to https://github.com/tangerine-network/go-tangerine or use
 
     docker run -v $PWD:/mnt -it byzantinelab/go-tangerine --help
 

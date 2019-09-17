@@ -58,7 +58,7 @@ To use the random library, simply include the library file then call `Random.ran
 ## Example
 
 ```
-import "github.com/byzantine-lab/tangerine-random-lib/RandomLib.sol";
+import "github.com/tangerine-network/random-lib/RandomLib.sol";
 
 contract UseRandom {
     event Win();
@@ -69,7 +69,7 @@ contract UseRandom {
     }
 
     function bet() public {
-        if (Random.rand() % 100 > 50) {
+        if (Random.rand() % 100 >= 50) {
             emit Win();
         } else {
             emit Lose();

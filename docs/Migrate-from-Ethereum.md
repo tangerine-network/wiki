@@ -22,7 +22,7 @@ Here's a simple Solidity smart contract that utilizes Tangerine's on-chain rando
 ```
 pragma solidity ^0.5.2;
 
-import "github.com/byzantine-lab/tangerine-random-lib/RandomLib.sol";
+import "github.com/tangerine-network/random-lib/RandomLib.sol";
 
 contract Hello {
     uint256 public value;

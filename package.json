@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/byzantine-lab/wiki.git"
+    "url": "git+ssh://git@github.com/tangerine-network/wiki.git"
   },
   "keywords": [
     "Tangerine",
@@ -25,10 +25,10 @@
     "Blockchain",
     "DLT"
   ],
-  "author": "Wei-Ning Huang <w@byzantine-lab.io>",
+  "author": "Wei-Ning Huang <w@tangerine-network.io>",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/byzantine-lab/wiki/issues"
+    "url": "https://github.com/tangerine-network/wiki/issues"
   },
-  "homepage": "https://gitlab.com/byzantine-lab/wiki#README"
+  "homepage": "https://github.com/tangerine-network/wiki#README"
 }
