@@ -15,7 +15,7 @@ Tangerine DKG-TSIG Protocol
 
 Phase 1 ID Registration 
 -------
-### @ T < 0
+### @ T << 0
 
 Each validator registers its ID(`DKGMasterPublicKey_i`) with stake.
 
