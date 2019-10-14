@@ -25,7 +25,7 @@ However, there are still some minor differences between the Tangerine's version 
 
 ## Remix IDE
 
-[Remix](https://remix.ethereum.org) is a web-based integrated development environment, built for Ethereum.
+[Remix](https://remix.dxn.ninja) is a web-based integrated development environment, built for Tangerine.
 
 With Remix IDE, you can develop, compile, deploy and debug your smart contracts easily from the same interface.
 
