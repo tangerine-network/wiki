@@ -8,7 +8,7 @@ The public RPC endpoints are available at:
 
 |Network|RESTful|WebSocket|Chain ID|
 |---|---|---|---|
-|Mainnet|https://mainnet-rpc.tangerine-network.io|wss://mainnet-rpc.tangerine-network.io/ws|373|
+|Mainnet|https://mainnet-rpc.tangerine-network.io|wss://mainnet-rpc.tangerine-network.io/ws|411|
 |Testnet|https://testnet-rpc.tangerine-network.io|wss://testnet-rpc.tangerine-network.io/ws|374|
 
 Point your Tangerine/Ethereum client to this RPC endpoint and you should be able to read from and send transactions to Tangerine networks.
