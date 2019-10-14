@@ -68,39 +68,17 @@ Start it and it will synchronize the local time automatically.
 
 Please make sure `TCP/30303` and `UDP/30303` is exposed, or else your node is likely to be disconnected from the reset of the network.
 
-### Generate Node Key
-
-A node key is required to operate a BP node. Run the following command to generate a node key:
-
-    docker run -v $PWD:/mnt -it byzantinelab/tangerine-tools \
-        nodekey generate /mnt/node.key
-
-This show output content similar to the following
-
-    Node Address: 0x93aA8C9C77De627E665F0b4015B7271B9Be89E83
-    Public Key:0x046272a157cbffa00677be00b08c9d47f295539b07e53360754579ad5e933a638ba58dcf850484e7d40b8bc163a920082b2500ee54968db7155c6231c7e4eed592
-
-Please store the address and public key which will be used to register a fullnode.
-A file node.key can be found under the current working directory. node.key is very important as it contains the node private key. Please save this file securely.
-
 ### Register & Run your Node
 
 1. Start the BP node. Use the following command to launch the BP node:
 
 ```
-docker run --restart always \
-    -v $PWD:/mnt \
-    -p 30303:30303/tcp \
-    -p 30303:30303/udp  \
-    -it byzantinelab/go-tangerine:latest \
-    --bp \
-    --nodekey=/mnt/node.key \
-    --datadir=/mnt/datadir \
-    --syncmode=fast\
-    --cache=1024 \
-    --gcmode=archive \
-    (--testnet)
+$ mkdir full_node_dir && cd full_node_dir
+$ curl -L https://raw.githubusercontent.com/tangerine-network/go-tangerine/master/scripts/run_bp.py -o run_bp.py && chmod +x run_bp.py
+$ ./run_bp.py --identity=SOME_NODE_NAME --testnet
 ```
+
+The `SOME_NODE_NAME` is the identity of your organization, for example "Byzantine Lab".
 
 The parameter `testnet` is only for the testnet of Tangerine Network.
 
