@@ -49,7 +49,7 @@ The formula of minting velocity is stated below:
 <p align="center">
   <img src="https://i.imgur.com/zkco21K.png" width="400">
 </p>
-r is total supply growth rate (the annual growth rate of total supply), vis node mining velocity (the annual mining rate of each node), and  is mining participation rate (the percentage of deposited tokens in validators relative to current total token circulation).
+r is total supply growth rate (the annual growth rate of total supply), v is node mining velocity (the annual mining rate of each node), and  is mining participation rate (the percentage of deposited tokens in validators relative to current total token circulation).
 Initially, v is 18% and will alter based on the total minted tokens under a half-life condition.
 The relation between node mining velocity and minted tokens is shown below:
 
